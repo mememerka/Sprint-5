@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@300;500&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="getClima()">
+    <div class="container">
+        <div class="background">
+            <div class="clima" id="clima"></div>
+            <div class="joke">
+                <div class="titol">
+                    <h1>PREPARAT PER RIURE?</h1>
+                </div>
+                <div class="joketext" id="joke"></div>
+                <div class="puntuacio">
+                    <button onclick="score1()" class="scorebtn">
+                        <i class="far fa-frown fa-7x"></i>
+                    </button>
+                    <button onclick="score2()" class="scorebtn">
+                        <i class="far fa-meh-blank fa-7x"></i>
+                    </button>
+                    <button onclick="score3()" class="scorebtn">
+                        <i class="far fa-grin-tears fa-7x"></i>
+                    </button>
+                </div>
+                <div class="div">
+                    <button onclick="getjoke()" class="jokebtn">Joke!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
